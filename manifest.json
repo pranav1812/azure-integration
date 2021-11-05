@@ -1,0 +1,33 @@
+{
+    "$schema": "https://developer.microsoft.com/en-us/json-schemas/teams/v1.11/MicrosoftTeams.schema.json",
+    "manifestVersion": "1.11",
+    "version": "0.0.0",
+    "id": "b9eb965f-2c89-4c26-ae06-2676e5eee3ce",
+    "packageName": "com.microsoft.ringover.demo",
+    "developer": {
+      "name": "Ringover",
+      "websiteUrl": "https://developer.ringover.com",
+      "privacyUrl": "https://developer.ringover.com/",
+      "termsOfUseUrl": "https://developer.ringover.com/"
+    },
+    "icons": {
+      "color": "color.png",
+      "outline": "outline.png"
+    },
+    "name": {
+      "short": "teams-demo",
+      "full": "demTeams"
+    },
+    "description": {
+      "short": "just demo",
+      "full": "just demo"
+    },
+    "accentColor": "#FFFFFF",
+    "permissions": [
+      "identity",
+      "messageTeamMembers"
+    ],
+    "validDomains": [
+      "developer.ringover.com"
+    ]
+  }
