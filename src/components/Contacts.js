@@ -1,5 +1,6 @@
-import React, { useState, useEffect } from 'react'
-import ContactTab from './ContactTab'
+import React from 'react'
+// , { useState, useEffect }
+// import ContactTab from './ContactTab'
 
 export default function contacts() {
     return (
