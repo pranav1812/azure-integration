@@ -7,6 +7,7 @@ import React, { useState, useEffect } from 'react';
 import DialPad from './components/DialPad';
 import CallHistory from './components/CallHistory';
 import Contacts from './components/Contacts';
+import Messages from './components/Messages';
 
 function App() {
   const [tab, setTab] = useState("dialPad");
@@ -26,11 +27,15 @@ function App() {
         <Nav.Item>
         <Nav.Link onClick= {()=> {setTab("contacts")}} >Contacts</Nav.Link>
         </Nav.Item>
+        <Nav.Item>
+        <Nav.Link onClick= {()=> {setTab("messages")}} >Messages</Nav.Link>
+        </Nav.Item>
       </Navbar>  
       {
         tab === "dialPad"? <DialPad /> :
         tab === "callHistory"? <CallHistory /> :
         tab === "contacts"? <Contacts /> :
+        tab === "messages"? <Messages /> :
         null
       }
     </div>
