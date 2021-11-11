@@ -12,7 +12,7 @@ export default function SaveAPIkey() {
             {
                 ls.get('apiKey') ? (
                     <div> 
-                        <h4>Currently stored API key: </h4> 
+                        <h4>stored API key: </h4> 
                         <span> {ls.get('apiKey')} </span>
                     </div>
                 ) : 
