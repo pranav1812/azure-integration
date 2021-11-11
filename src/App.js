@@ -4,6 +4,7 @@ import Nav from 'react-bootstrap/Nav'
 import Navbar from 'react-bootstrap/Navbar'
 import React, { useState, useEffect } from 'react';
 
+import SaveAPIkey from './components/SaveAPIkey';
 import DialPad from './components/DialPad';
 import CallHistory from './components/CallHistory';
 import Contacts from './components/Contacts';
@@ -19,6 +20,9 @@ function App() {
     <div className="App">
       <Navbar bg="dark" >
         <Nav.Item>
+        <Nav.Link onClick= {()=> {setTab("saveAPIKey")}} >Save API Key</Nav.Link>
+        </Nav.Item>
+        <Nav.Item>
         <Nav.Link onClick= {()=> {setTab("dialPad")}}>Dial Pad</Nav.Link>
         </Nav.Item>
         <Nav.Item>
@@ -32,6 +36,7 @@ function App() {
         </Nav.Item>
       </Navbar>  
       {
+        tab === "saveAPIKey"?<SaveAPIkey /> :
         tab === "dialPad"? <DialPad /> :
         tab === "callHistory"? <CallHistory /> :
         tab === "contacts"? <Contacts /> :
