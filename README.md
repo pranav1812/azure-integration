@@ -1,5 +1,7 @@
 https://polite-rock-019ce0a10.azurestaticapps.net/
 
+A tweak of this app has been successfully embeded in MS-teams using app studio. All changes made to the master branch go live automatically within 2-3 minutes of push with github actions and azure CI/CD pipeline.
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
